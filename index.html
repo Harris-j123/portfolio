@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harish | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --light: #ffffff;
+      --primary: #00c3ff;
+      --secondary: #ff61a6;
+      --accent: #ffe600;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--light);
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 3rem;
+      font-weight: 700;
+      text-shadow: 0 0 15px rgba(0, 195, 255, 0.5);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--light);
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .section-box {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 195, 255, 0.3);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+      text-shadow: 0 0 8px var(--accent);
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background: var(--primary);
+      color: #000;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 0 10px var(--primary);
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    HARRIS ⚡
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <div class="section-box">
+      <h2>About Me</h2>
+      <p>Hi, I'm Harris. I specialize in bridging engineering and creativity through tech innovation. With a background in ECE and a passion for design, AI, and futuristic systems, I enjoy building meaningful digital solutions and tech experiences.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-box">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Drone Surveillance</h3>
+          <p>Built a functional quadcopter drone with GPS tracking and aerial camera for real-time monitoring.</p>
+        </div>
+        <div class="card">
+          <h3>Resume Analyzer</h3>
+          <p>Web tool that evaluates resumes with AI and suggests improvements for ATS optimization.</p>
+        </div>
+        <div class="card">
+          <h3>SpeakWithAI</h3>
+          <p>AI chatbot interface for natural conversation simulation and basic diagnostics.</p>
+        </div>
+      </div>
+    </div>
+ 
+ <section id="skills">
+    <div class="section-box">
+      <h2>Skills</h2>
+      <p>HTML, CSS, JavaScript, Python, Java, Embedded C, Verilog, MATLAB, GitHub, UI/UX, Photography, Graphic Design</p>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <div class="section-box">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:harrisprofession@gmail" style="color: var(--primary);">harrisprofession@gmail</a></p>
+      <p>GitHub: <a href="" target="_blank" style="color: var(--primary);">@prasanth008x</a></p>
+      <p>GitHub: <a href="https://www.linkedin.com/in/harris-j-7561bb328/" target="_blank" style="color: var(--primary);">@prasanth008x</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/harris-j-7561bb328/" target="_blank" style="color: var(--primary);">/Harris</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> Harris. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
